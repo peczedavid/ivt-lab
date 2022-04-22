@@ -7,10 +7,10 @@ import java.util.Random;
 * (Deliberately contains bugs.)
 */
 public class TorpedoStore {
-  private Random generator = new Random();
-
   // rate of failing to fire torpedos [0.0, 1.0]
   private double FAILURE_RATE = 0.0; //NOSONAR
+  
+  Random generator = new Random();
 
   private int torpedoCount = 0;
 
